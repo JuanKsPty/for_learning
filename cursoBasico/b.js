@@ -1,5 +1,4 @@
 const tipoDeSuscripcion = "Basic";
-
 switch (tipoDeSuscripcion) {
    case "Free":
        console.log("Solo puedes tomar los cursos gratis");
