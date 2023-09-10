@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Tres Opciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="selector">
+        <div class="text_container">
+            <h1>Piedra papel o tijeras</h1>
+            <p>Selecciona una opcion</p>
+        </div>
+        <ul>
+            <li id="piedra" data-value="1"></li>
+            <li id="papel" data-value="2"></li>
+            <li id="tijeras" data-value="3"></li>
+        </ul>
+        <button>Press to check </button>
+        <div class="resultados">
+            <h2></h2>
+            <div>
+                <div class="columnaJugador">
+                    <p>Jugador eligió</p>
+                    <div></div>
+                </div>
+                <div class="columnaPc">
+                    <p>PC seleccionó</p>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+:root{
+    --backgroundColor: rgb(51, 29, 44);
+    --backgroundColor2: rgb(63, 46, 62);
+    --textColor: rgb(167, 130, 149);
+    --textColor2: rgb(239, 225, 209);
+}
+body{
+    background-color: var(--backgroundColor);
+    width: 100%;
+    height: 100%;
+}
+.text{
+color: var(--textColor2);
+margin: 0;
+}
+.main_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.objetos_a_seleccionar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.objetos_a_seleccionar div{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 0;
+
+    display: grid;
+    place-items: center;
+    background-color: var(--backgroundColor2);
+
+}
+.contenedor_resultados{
+    color: var(--textColor2);
+}
