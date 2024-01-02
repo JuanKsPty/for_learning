@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Encuesta para padres de familia</h1>
+  <p id="description">Gracias por tomarse el tiempo para mejorar nuestra comunidad!</p>
+  <form id="survey-form" method="post" required>
+    <fieldset>
+      <label id="name-label" for="name">Nombre<input type="text" id="name" placeholder="Nombre"></label>
+      <label id="email-label" for="email">Email<input type="email" id="email" placeholder="Ingresa tu email"></label>
+      <label id="number-label" for="number">Edad <input type="number" id="number" min="18" max="120" placeholder="Ingresa tu edad:"></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">
+        Nivel de su hijo
+        <select name="dropdown" id="dropdown" >
+          <option value="primaria">Primaria</option>
+          <option value="secundaria">Secundaria</option>
+          <option value="media">Media</option>
+        </select>
+    </label>
+    <label id="name/son-label" for="nameSon">Nombre de su hijo<input type="text" id="nameSon" placeholder="Nombre"></label>
+    <label id="cedula-label" for="cedulaSon">Cédula de su hijo<input type="text" id="cedulaSon" placeholder="Cedula "></label>
+  </fieldset>
+  <fieldset>
+    <div>
+      <p>Recomendarias nuestro colegio?</p>
+      <label for="definitivamente"><input type="radio" name="recomendacion" id="definitivamente" value="definitivamente">     Definitivamente</label>
+      <label for="talvez"><input type="radio" name="recomendacion" value="talvez" id="talvez">     Tal vez</label>
+      <label for="no"><input type="radio" name="recomendacion" value="no" id="no">     No</label>
+    </div>
+    <div>
+      <p>En que areas desearias ver mejoras?</p>
+      <label for="salonClases"><input type="checkbox" value="salonClases" name="salonClases" id="salonClases">    Salon De clases</label>
+      <label for="auditorio"><input type="checkbox" value="auditorio" name="auditorio" id="auditorio">    Auditorio</label>
+      <label for="salonInformatica"><input type="checkbox" value="salonInformatica" name="salonInformatica" id="salonInformatica">    Salon de Informatica</label>
+    </div>
+    <div>
+      <p>Alguna sugerencia?</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+  </fieldset>
+  <input id="submit" type="submit">
+  </form>
+</body>
+</html>

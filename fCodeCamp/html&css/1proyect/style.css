@@ -1,0 +1,98 @@
+:root{
+    --fondo: #4b5757;
+    --fondo-claro: #58706d;
+    --midColor: #7c8a6e;
+    --bordes: #b0b087;
+    --font: white;
+
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    
+    color: var(--font);
+    box-sizing: border-box;
+    
+}
+body {
+    background: var(--fondo);
+    background-image: url("https://www.defensoria.gob.pe/wp-content/uploads/2019/01/colegio_andina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; 
+    color: var(--font);
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(4, 53, 94, 0.8), rgba(16, 60, 63, 0.8)); /* Aquí, he utilizado valores aproximados de la paleta que proporcionaste. Ajusta los colores y la opacidad según tus necesidades. */
+    z-index: -1; /* Asegura que el gradiente esté detrás del contenido principal */
+}
+
+#description {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+h1 {
+    font-size: 32px;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    max-width: 600px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 16px 24px;
+    border-radius: 8px;
+    
+    background-color: var(--fondo-claro);
+}
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+fieldset {
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--bordes);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: var(--midColor);
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #195e63; /* Puedes cambiar este color según tus preferencias */
+    outline: none;
+    box-shadow: 0 0 8px rgba(25, 94, 99, 0.5); /* Cambia el color y la opacidad según tus preferencias */
+}
+div input {
+    display: inline;
+    width: auto;
+}
+div p {
+    text-align: start;
+    font-size: 18px;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
+.submit {
+    background-color: var(--bordes);
+}
