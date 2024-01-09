@@ -1,0 +1,71 @@
+* {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3f3f3
+    ;
+}
+main {
+    width: 90vw;
+    margin: auto;
+}
+h1, main > p {
+    text-align: center;
+}
+h1 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 74px 0 6px;
+}
+#description {
+    
+    margin: 0 auto 74px ;
+}
+p {
+    text-align: justify;
+   
+}
+figure {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 32px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #d7d8da
+
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    object-position: center;
+    
+}
+div {
+    margin-top: 6px;
+    text-align: center;
+}
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.information {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 80px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: #9e9898;
+}
