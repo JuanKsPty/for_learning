@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Introducción a la Terminal y Línea de Comandos</title>
+
+</head>
+<body>
+    <nav id="navbar">
+        <header>Introducción a la Terminal y Línea de Comandos</header>
+        <ol>
+            <li><a class="nav-link" href="La_terminal_es">La Terminal es</a></li>
+            <li><a class="nav-link" href="#Un_comando_es">El comando</a></li>
+            <li><a class="nav-link" href="#Wildcards">Wildcards</a></li>
+            <li><a class="nav-link" href="#Redirecciones">Redirecciones</a></li>
+            <li><a class="nav-link" href="#Permisos">Permisos</a></li>
+            <li><a class="nav-link" href="#Comandos_de_basicos">Comandos de basicos</a></li>
+       
+        </ol>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="La_terminal_es">
+            <header>La terminal es</header>
+            <article>
+               <p>Es una interfaz gráfica que simula una linea de comandos y cuando hablamos de una línea de comandos nos referimos a una shell.</p>
+               <ul>
+                    <li><div class="bold">la Terminal:</div> es la ventanita que nos muestra el prompt. Este aloja la shell.</li>
+                    <li><div class="bold">Linea de comandos:</div> programa que toma comandos y los pasa al sistema operativo para hacer algo.</li>
+               </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Un_comando_es">
+            <header>Un comando es</header>
+            <article>
+                <p>Un comando puede ser cuatro cosas:</p>
+                <ul>
+                    <li>Un programa ejecutable.</li>
+                    <li>Un comando de utilidad de la `shell`</li>
+                    <li>Una función de `shell`</li>
+                    <li>Un alias.</li>
+                </ul>
+                <p>El comando type es un comando que nos permite analizar la naturaleza de otros comandos.</p>
+                <p>Para crear alias en la terminal podemos hacer uso de la palabra reservada alias, este nos crea un alias temporal para la sesión actual en la que estamos trabajando; hacerlo persistente se verá en una siguiente sección.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Wildcards">
+            <header>Wildcards</header>
+            <article>
+                <p>Son una serie de caracteres especiales que nos permiten realizar mejores búsquedas.</p>
+                <p>Nos sirven  para realizar seccionamiento de archivos o directorios. </p>
+                <p>Ejemplo “ *.html “ para buscar todos los archivos html.</p>
+            </article>
+        </section>        
+
+        <section class="main-section" id="Redirecciones">
+            <header>Redirecciones</header>
+            <article>
+                <p>Las redirecciones nos permiten realizar comandos extra, a la vez.</p>
+                <p>Tabla de operadores</p>
+                <table>
+                    <tr>
+                        <td>Operador</td>
+                        <td>Función</td>
+                    </tr>
+                    <tr>
+                        <td>></td>
+                        <td>Redirecciona la salida. Por defecto redirecciona el Standar Output</td>
+                    </tr>
+                    <tr>
+                        <td>>></td>
+                        <td>Concatena la salida con lo que ya tenga el archivo a donde se está redirigiendo la salida</td>
+                    </tr>
+                    <tr>
+                        <td>;</td>
+                        <td>Ejecuta de forma síncrona los comandos específicados</td>
+                    </tr>
+                    <tr>
+                        <td>&</td>
+                        <td>Ejecuta de forma asíncrona los comandos específicados</td>
+                    </tr>
+                </table>
+            </article>
+        </section>        
+        <section class="main-section" id="Permisos">
+            <header>Permisos</header>
+            <article>
+                <p>En la terminal podemos usar diferentes tipos de símbolos, cuales podemos clasificar por:</p>
+                <ul>
+                    <li>
+                        <p>Tipo de archivo</p>
+                        <table>
+                            <tr>
+                                <td>Atributo</td>
+                                <td>Tipo de archivo</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Un archivo normal.</td>
+                            </tr>
+                            <tr>
+                                <td>d</td>
+                                <td>Un directorio.</td>
+                            </tr>
+                            <tr>
+                                <td>l</td>
+                                <td>Un link simbolico.</td>
+                            </tr>
+                            <tr>
+                                <td>b</td>
+                                <td>Un archivo de bloque especial.</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Tipo de modo</p>
+                        <table>
+                            <tr>
+                                <td>Dueño</td>
+                                <td>Grupo</td>
+                                <td>World</td>
+                            </tr>
+                            <tr>
+                                <td>rwx</td>
+                                <td>r-x</td>
+                                <td>r-x</td>
+                            </tr>
+                            <tr>
+                                <td>1 1 1</td>
+                                <td>1 0 1</td>
+                                <td>1 0 1</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </article>
+        </section>        
+        <section class="main-section" id="Comandos_de_basicos">
+            <header>Comandos de basicos</header>
+            <article>
+                <p>Entre los comandos mas basicos estan:</p>
+                
+                <pre><code>pwd /* para ver el directorio en el que trabajas. */</code></pre>
+                <pre><code>ls /* para ver una lista de los elementos del directorio actual. */</code></pre>
+                <pre><code>mkdir /* para crear un directorio. */</code></pre>
+                <pre><code>sudo /* para dar permiso de administrador. */</code></pre>
+                <pre><code>cd /* para cambiar el directorio en el que te encuentras. */</code></pre>
+                <pre><code></code>
+            </article>
+        </section>        
+    </main>
+</body>
+</html>
